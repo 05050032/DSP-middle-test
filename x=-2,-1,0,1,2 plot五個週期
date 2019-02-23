@@ -1,0 +1,11 @@
+close all;
+clear all;
+n=[-12:12];
+x=[-2,-1,0,1,2];
+x=x'*ones(1,5);
+x=(x(:))';
+Hs=stem(n,x,'filled');
+set(Hs,'markersize',2);
+xlabel('n');
+ylabel('x_1(n)');
+title('Sequence x_1(n)');
