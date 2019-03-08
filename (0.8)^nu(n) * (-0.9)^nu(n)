@@ -1,0 +1,10 @@
+n=[0:50];
+x=0.8.^n;
+h=(-0.9).^n;
+y1=((0.8).^(n+1)-(-0.9).^(n+1))/(0.8+0.9);
+subplot(1,3,1);
+Hs1=stem(n,y1,'filled');
+set(Hs1,'markersize',2);
+title('Analttical');
+xlabel('n');
+ylabel('y(n)');
